@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sceneswitch.SceneController">
+   <children>
+      <RadioButton fx:id="file1" layoutX="137.0" layoutY="175.0" mnemonicParsing="false" onAction="#fristFileOpen" text="1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="file2" layoutX="257.0" layoutY="175.0" mnemonicParsing="false" onAction="#secondFileOpen" text="2">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton layoutX="390.0" layoutY="175.0" mnemonicParsing="false" onAction="#thirdFileOpen" text="3">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <Text fill="#0d00ff" layoutX="204.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Opening a Files">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

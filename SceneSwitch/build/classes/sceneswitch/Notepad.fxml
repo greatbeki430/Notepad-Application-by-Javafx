@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="372.0" prefWidth="595.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sceneswitch.SceneController">
+   <children>
+      <TextArea fx:id="myText" layoutX="-1.0" layoutY="27.0" prefHeight="345.0" prefWidth="585.0" />
+      <MenuBar layoutX="-1.0" layoutY="3.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="New" />
+                  <MenuItem mnemonicParsing="false" onAction="#OpenFile" text="Open" />
+                  <MenuItem mnemonicParsing="false" text="Save" />
+                  <MenuItem mnemonicParsing="false" onAction="#SaveFile" text="Sava As" />
+                  <MenuItem mnemonicParsing="false" onAction="#exitOnAction" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Undo" />
+                  <MenuItem mnemonicParsing="false" text="Cut" />
+                  <MenuItem mnemonicParsing="false" text="Copy" />
+                  <MenuItem mnemonicParsing="false" text="Paste" />
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Format">
+            <items>
+                  <RadioMenuItem mnemonicParsing="false" text="Word Wrap" />
+                  <MenuItem mnemonicParsing="false" text="Font" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="View">
+              <items>
+                  <RadioMenuItem mnemonicParsing="false" text="Status Bar" />
+                <MenuItem mnemonicParsing="false" text="Zoom" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem mnemonicParsing="false" text="View Help" />
+                  <MenuItem mnemonicParsing="false" text="Send Feedback" />
+                  <MenuItem mnemonicParsing="false" text="About Notepad" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Origin">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#backToFrist" text="Back to The frist page" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

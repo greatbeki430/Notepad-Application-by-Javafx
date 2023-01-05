@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #885997;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sceneswitch.SceneController">
+   <children>
+      <Button fx:id="LOG" layoutX="484.0" layoutY="292.0" mnemonicParsing="false" onAction="#switchToScene1" text="Login">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="CLEAR" layoutX="386.0" layoutY="292.0" mnemonicParsing="false" onAction="#clearOnAction" text="Clear">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="308.0" layoutY="105.0" text="Username:" textFill="#f5f5f5">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="308.0" layoutY="162.0" text="Password:" textFill="WHITE">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Text1" layoutX="394.0" layoutY="101.0" promptText="Username" />
+      <PasswordField fx:id="Pass1" layoutX="394.0" layoutY="158.0" promptText="Password" />
+      <AnchorPane layoutX="-3.0" layoutY="-2.0" prefHeight="407.0" prefWidth="266.0" style="-fx-background-color: Yellow;">
+         <children>
+            <Label layoutX="33.0" layoutY="14.0" text="Welcome!">
+               <font>
+                  <Font name="Times New Roman" size="50.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="340.0" fitWidth="263.0" layoutX="4.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@MyImages/Great.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="367.0" layoutY="14.0" prefHeight="57.0" prefWidth="149.0" text="Login!" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman" size="50.0" />
+         </font>
+      </Label>
+      <Text fx:id="Text2" fill="#ff0101" layoutX="317.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="259.4955139160156">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
